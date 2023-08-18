@@ -11,4 +11,4 @@
 # /inp
 
 # exclude venv
-/cml-env
+/hasoc
