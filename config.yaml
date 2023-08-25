@@ -8,6 +8,5 @@ hyps:
   n_split: 5
   max_len:
     assamese: 256
-  random_state:
-    - 42
+  seeds:
     - 2023
