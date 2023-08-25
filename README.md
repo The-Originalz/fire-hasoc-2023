@@ -1,8 +1,8 @@
-# Project Name
+# HASOC 23
 
 Platform:  
 Organizers:  
-Competition Page: 
+Competition Page:
 
 ## About
 
@@ -29,6 +29,7 @@ Competition Page:
 - EDA, modelling, pipeline notebooks to be added here.
 
 ### out
+
 - contains the output data such as submission files, etc.
 
 ### src
@@ -36,26 +37,27 @@ Competition Page:
 - Code package, consisting of modularised code for data preparation, cross validation, feature engineering, modelling, inference code snippets.
 
 ## VENV set-up
+
 For the starter, I've used *pip* over *miniconda* for package management. Follow the steps mentioned to set up your work ennvironment and get going.
 
 1. Create a virutal environment using `python venv`
 
-```
+```sh
 cd proj-dir
-python -m venv your-environment-name
-``` 
+python -m venv hasoc
+```
 
 2. On successful creation of the env, activate the env by navigating to the `activate` script depending on your operating system.  
 If using `WSL` on windows or linux, run the following:
 
-```
-cd your-environment-name
+```sh
+cd hasoc
 source bin/activate
 ```
 
 To make sure you're using the correct python env, run the following command. You should get the `bin/python` path of your virutual env as output.
 
-```
+```sh
 which python
 ```
 
@@ -63,7 +65,7 @@ which python
 
 To install from the `requirements.txt` file:
 
-```
+```sh
 python -m pip install -r requirements.txt
 ```
 
@@ -73,14 +75,10 @@ Note that, it's recommended to follow the given directory structure. Meaning, `s
 
 To run logger and the configuration for sanity check:
 
-```
+```sh
 cd src
 python logger.py
 python configuration.py
 ```
 
 >Note that it's only a starter package for structuring a competitive machine learning or a research project. You are more than welcome to make modifications and recommend the same via pull requests.
-
-
-# Contributions Welcome
-Raise a PR for any suggestions/recommendations on frequenctly used practices in competitive machine learning or research projects.
