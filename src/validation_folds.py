@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.model_selection import KFold
 from logger import config, logger
 
-_LANG = 'gujju'
+_LANG = 'sinhala'
 _SEED = random.sample(config['hyps']['seeds'], 1)[0]
 _KFOLD = True
 _TARGET_COL = 'label'
@@ -46,6 +46,8 @@ if __name__ == '__main__':
             if not os.path.exists(sub_folder_path):
                 os.makedirs(sub_folder_path)
 
-            train_df.iloc[train_idx].to_csv(os.path.join(sub_folder_path, 'train.csv'), index=False)
-            train_df.iloc[val_idx].to_csv(os.path.join(sub_folder_path, 'val.csv'), index=False)
+            trn_df = train_df.iloc[train_idx].reset_index()
+            trn_df.to_csv(os.path.join(sub_folder_path, 'train.csv'), index=False)
+            val_df = train_df.iloc[val_idx].reset_index()
+            val_df.to_csv(os.path.join(sub_folder_path, 'val.csv'), index=False)
     pass
