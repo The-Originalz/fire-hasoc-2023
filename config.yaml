@@ -1,6 +1,9 @@
 data:
   inp: "./../inp"
   out: "./../out"
+  labelmaps:
+    id2label: {0: "NOT", 1: "HOF"}
+    label2id: {"NOT": 0, "HOF": 1}
 
 logs: "./../logs"
 
