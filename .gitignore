@@ -12,3 +12,6 @@
 
 # exclude venv
 /hasoc
+
+# exclude log
+/logs
